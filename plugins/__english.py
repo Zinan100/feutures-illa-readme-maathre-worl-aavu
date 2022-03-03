@@ -1,7 +1,7 @@
-from Alita.MashaRoBot import telethn as tbot
+from MashaRoBot import telethn as tbot
 import json
 import requests
-from Alita.MashaRoBot.events import register
+from MashaRoBot.events import register
 from telethon import *
 from telethon.tl import functions
 import os
