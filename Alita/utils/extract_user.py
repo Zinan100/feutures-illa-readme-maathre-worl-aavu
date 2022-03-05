@@ -4,7 +4,7 @@ from typing import Tuple
 from pyrogram.types.messages_and_media.message import Message
 
 from Alita import LOGGER
-from pyrogram import Client as Alita
+from Alita.bot_class import Alita
 from database.users_db import Users
 
 
