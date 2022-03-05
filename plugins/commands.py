@@ -23,11 +23,11 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('Uᴘᴅᴀᴛᴇs', url='https://t.me/cinemaenglish123')
+                InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/cinemaenglish123')
             ],
             [
-                InlineKeyboardButton('Hᴇʟᴏ', url=f"https://t.me/{temp.U_NAME}?start=help"),
-                InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data="close_data"),
+                InlineKeyboardButton('𝙷𝚎𝚕𝚘', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 ✗', callback_data="close_data"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -43,19 +43,19 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/cinemaenglish123')
+            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/cinemaenglish123')
             ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/Justaupdatechannel'),
+            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
             ],[
-            InlineKeyboardButton('✗ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ✗', callback_data='close_data')
+            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -90,19 +90,19 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/cinemaenglish123')
+            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/cinemaenglish123')
             ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/Justaupdatechannel'),
+            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
             ],[
-            InlineKeyboardButton('✗ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ✗', callback_data='close_data')
+            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
