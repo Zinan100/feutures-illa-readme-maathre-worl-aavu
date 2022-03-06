@@ -802,9 +802,39 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙿𝚒𝚗𝚐', callback_data='pings'),
             InlineKeyboardButton('𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑', callback_data='tele')
             ],[
+            InlineKeyboardButton('𝚆𝚑𝚘𝚒𝚜', callback_data='whois'),
+            InlineKeyboardButton('𝙼𝚞𝚝𝚎', callback_data='restric'),
+            InlineKeyboardButton('𝙺𝚒𝚌𝚔', callback_data='zombies')
+            ],[
+            InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
+            InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
+            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker')
+            ],[
+            InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
+            InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort')
+            ],[
+            InlineKeyboardButton('𝙶-𝚃𝚛𝚊𝚗𝚜', callback_data='gtrans'),
+            InlineKeyboardButton('𝙵𝚒𝚕𝚎-𝚂𝚝𝚘𝚛𝚎', callback_data='newdata'),
+            InlineKeyboardButton('𝚂𝚑𝚊𝚛𝚎-𝚃𝚎𝚡𝚝', callback_data='sharetext'),
+            ],[
+            InlineKeyboardButton('𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍-𝙶𝚎𝚗', callback_data='genpassword'),
+            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
+            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
+            ],[
+            InlineKeyboardButton('𝙻𝚘𝚌𝚔𝚜', callback_data='lock'),
+            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
+            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purge'),
+            ],[
+            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝𝚗𝚎𝚛', callback_data='url'),
+            InlineKeyboardButton('𝚃𝚘𝚛𝚛𝚎𝚗𝚝', callback_data='torrent'),
+            ],[
+            InlineKeyboardButton('𝚆𝚊𝚛𝚗', callback_data='warn'),
+            ],[
             InlineKeyboardButton('𝙱𝚊𝚌𝚔', callback_data='start'),
             InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats'),
-            InlineKeyboardButton('𝙽𝚎𝚡𝚝', callback_data='next')
+            InlineKeyboardButton('Close X', callback_data='close_data')
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
@@ -909,60 +939,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.ABOUT_TXT.format(temp.B_NAME),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "next":
-        buttons = [[
-            InlineKeyboardButton('𝚆𝚑𝚘𝚒𝚜', callback_data='whois'),
-            InlineKeyboardButton('𝙼𝚞𝚝𝚎', callback_data='restric'),
-            InlineKeyboardButton('𝙺𝚒𝚌𝚔', callback_data='zombies')
-            ],[
-            InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
-            InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
-            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker')
-            ],[
-            InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
-            InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
-            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort')
-            ],[
-            InlineKeyboardButton('𝙶-𝚃𝚛𝚊𝚗𝚜', callback_data='gtrans'),
-            InlineKeyboardButton('𝙵𝚒𝚕𝚎-𝚂𝚝𝚘𝚛𝚎', callback_data='newdata'),
-            InlineKeyboardButton('𝚂𝚑𝚊𝚛𝚎-𝚃𝚎𝚡𝚝', callback_data='sharetext'),
-            ],[
-            InlineKeyboardButton('𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍-𝙶𝚎𝚗', callback_data='genpassword'),
-            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
-            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
-            ],[
-            InlineKeyboardButton('Back', callback_data='help'),
-            InlineKeyboardButton('Next', callback_data='nextt'),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.NEXT_TXT,
-            disable_web_page_preview=True,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "nextt":
-        buttons = [[
-            InlineKeyboardButton('𝙻𝚘𝚌𝚔𝚜', callback_data='lock'),
-            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
-            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purge'),
-            ],[
-            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
-            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝𝚗𝚎𝚛', callback_data='url'),
-            InlineKeyboardButton('𝚃𝚘𝚛𝚛𝚎𝚗𝚝', callback_data='torrent'),
-            ],[
-            InlineKeyboardButton('𝚆𝚊𝚛𝚗', callback_data='warn'),
-            ],[
-            InlineKeyboardButton('Back', callback_data='next'),
-            InlineKeyboardButton('Close', callback_data='close_data'),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.NEXTT_TXT,
-            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
