@@ -411,14 +411,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{files.file_name}"
         buttons = [
-            [
-                InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/cinemaenglish123'),
-                InlineKeyboardButton('Dᴇᴠ', url='https://t.me/Abhisheksvlog')
-            ],
-            [
-                InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url=f'https://t.me/justaupdatechannel')
-            ]
-            ]
+        [
+            InlineKeyboardButton('𝑮𝒓𝒐𝒖𝒑', url='https://t.me/MovieHubOfficialGroup'),
+            InlineKeyboardButton('𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓', url='https://t.me/Abhisheksvlog')
+        ],
+        [
+            InlineKeyboardButton('𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url=f'https://t.me/justaupdatechannel')
+        ]
+        ]
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -464,14 +464,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if f_caption is None:
             f_caption = f"{title}"
         buttons = [
-            [
-                InlineKeyboardButton('Gʀᴏᴜᴏ', url='https://t.me/cinemaenglish123'),
-                InlineKeyboardButton('Dᴇᴠ', url='https://t.me/Abhisheksvlog')
-            ],
-            [
-                InlineKeyboardButton('Cʜᴀɴᴇᴇʟ', url=f'https://t.me/justaupdatechannel')
-            ]
-            ]
+        [
+            InlineKeyboardButton('𝑮𝒓𝒐𝒖𝒑', url='https://t.me/MovieHubOfficialGroup'),
+            InlineKeyboardButton('𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓', url='https://t.me/Abhisheksvlog')
+        ],
+        [
+            InlineKeyboardButton('𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url=f'https://t.me/justaupdatechannel')
+        ]
+        ]
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -715,19 +715,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
+            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
             ],[
-            InlineKeyboardButton('🔍Sᴇᴀʀᴄʜ Hᴇʀᴇ Mᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('Gʀᴏᴜᴘ', url='https://t.me/cinemaenglish123')
+            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/MovieHubOfficialGroup')
             ],[
-            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url='https://t.me/Justaupdatechannel'),
+            InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
             ],[
-            InlineKeyboardButton('✗ Cʟᴏsᴇ Tʜᴇ Mᴇɴᴜ ✗', callback_data='close_data')
+            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
@@ -806,33 +806,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙼𝚞𝚝𝚎', callback_data='restric'),
             InlineKeyboardButton('𝙺𝚒𝚌𝚔', callback_data='zombies')
             ],[
-            InlineKeyboardButton('Rᴇᴘᴏʀᴛ', callback_data='report'),
-            InlineKeyboardButton('Yᴛ-Tʜᴜᴍʙ', callback_data='ytthumb'),
-            InlineKeyboardButton('Sᴛɪᴄᴋᴇʀ-Iᴅ', callback_data='sticker')
+            InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
+            InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
+            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker')
             ],[
-            InlineKeyboardButton('Cᴏᴠɪᴅ', callback_data='corona'),
-            InlineKeyboardButton('Aᴜᴅɪᴏ-Bᴏᴏᴋ', callback_data='abook'),
-            InlineKeyboardButton('Uʀʟ-Sʜᴏʀᴛ', callback_data='urlshort')
+            InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
+            InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort')
             ],[
-            InlineKeyboardButton('G-Tʀᴀɴs', callback_data='gtrans'),
-            InlineKeyboardButton('Fɪʟᴇ-Sᴛᴏʀᴇ', callback_data='newdata'),
-            InlineKeyboardButton('Sʜᴀʀᴇ-Tᴇxᴛ', callback_data='sharetext'),
+            InlineKeyboardButton('𝙶-𝚃𝚛𝚊𝚗𝚜', callback_data='gtrans'),
+            InlineKeyboardButton('𝙵𝚒𝚕𝚎-𝚂𝚝𝚘𝚛𝚎', callback_data='newdata'),
+            InlineKeyboardButton('𝚂𝚑𝚊𝚛𝚎-𝚃𝚎𝚡𝚝', callback_data='sharetext'),
             ],[
-            InlineKeyboardButton('Pᴀssᴡᴏʀᴅ-Gᴇɴ', callback_data='genpassword'),
-            InlineKeyboardButton('Aᴘᴘʀᴏᴠᴇ', callback_data='approve'),
-            InlineKeyboardButton('Gʀᴇᴇᴛɴɢs', callback_data='welcome'),
+            InlineKeyboardButton('𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍-𝙶𝚎𝚗', callback_data='genpassword'),
+            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
+            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
             ],[
-            InlineKeyboardButton('Lᴏᴄᴋs', callback_data='lock'),
-            InlineKeyboardButton('Nᴏᴛᴇs', callback_data='note'),
-            InlineKeyboardButton('Pᴜʀɢᴇ', callback_data='purge'),
+            InlineKeyboardButton('𝙻𝚘𝚌𝚔𝚜', callback_data='lock'),
+            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
+            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purge'),
             ],[
-            InlineKeyboardButton('Rᴜʟᴇs', callback_data='rule'),
-            InlineKeyboardButton('Uʀʟ-Sʜᴏʀᴛɴᴇʀ', callback_data='url'),
-            InlineKeyboardButton('Tᴏʀʀᴇɴᴛ', callback_data='torrent'),
+            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝𝚗𝚎𝚛', callback_data='url'),
+            InlineKeyboardButton('𝚃𝚘𝚛𝚛𝚎𝚗𝚝', callback_data='torrent'),
             ],[
-            InlineKeyboardButton('Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data')
+            InlineKeyboardButton('𝙱𝚊𝚌𝚔', callback_data='start'),
+            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats'),
+            InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 ✗', callback_data='close_data')
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
@@ -905,19 +905,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats'),
-            InlineKeyboardButton('Sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('𝚂𝚝𝚊𝚝𝚞𝚜', callback_data='stats'),
+            InlineKeyboardButton('𝚂𝚘𝚞𝚛𝚌𝚎', callback_data='source')
             ],[
-            InlineKeyboardButton('🔍Sᴇᴀʀᴄʜ Mᴏᴠɪᴇ🔎', switch_inline_query_current_chat='')
+            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
-            InlineKeyboardButton('🍿Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛ Gʀᴏᴜᴘ🍿', url='https://t.me/Cinemaenglish123')
+            InlineKeyboardButton('🍿𝙼𝚘𝚟𝚒𝚎 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙶𝚛𝚘𝚞𝚙🍿', url='https://t.me/MovieHubOfficialGroup')
             ],[
-            InlineKeyboardButton('Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs', callback_data='help')
+            InlineKeyboardButton('𝙷𝚎𝚕𝚙 & 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜', callback_data='help')
             ],[
-            InlineKeyboardButton('« Bᴀᴄᴋ', callback_data='start'),
-            InlineKeyboardButton('Cʟᴏsᴇ ✗', callback_data='close_data'),
+            InlineKeyboardButton('« 𝙱𝚊𝚌𝚔', callback_data='start'),
+            InlineKeyboardButton('𝙲𝚕𝚘𝚜𝚎 ✗', callback_data='close_data'),
         ]]
         await query.message.edit_text(
             text="⭗ ⭗ ⭗ ⭗ ⭗ ⭗"
@@ -1510,14 +1510,14 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text="NEXT ⏩", callback_data=f"next_{req}_{key}_{offset}")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/BT_MOVIES_HD")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/Justaupdatechannel")]
         )
     else:
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
         )
         btn.insert(0,
-            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/JUSTAUPDATESCHANNEL")]
+            [InlineKeyboardButton(text="⭕️ Join Our Channel ⭕️",url="https://t.me/JUSTAUPDATECHANNEL")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
