@@ -30,6 +30,10 @@ Hey How's the features Did you Like it <a href='tg://user?id=1951205538'><b>𝑹
 
 🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️"""
 
+    NEXT_TXT = """Welcome To My Second Help Module"""
+
+    NEXTT_TXT = """Welcome To My Third Help Module"""
+
     WARN_TXT = """Here is the help for the <b>Warns</b> module:
 
 Keep your members in check with warnings; stop them getting out of control!
