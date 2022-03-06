@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/cinemaenglish123')
+                InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜', url='https://t.me/MovieHubOfficialGroup')
             ],
             [
                 InlineKeyboardButton('𝙷𝚎𝚕𝚘', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/cinemaenglish123')
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/MovieHubOfficialGroup')
             ],[
             InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
             ],[
@@ -98,7 +98,7 @@ async def start(client, message):
             InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
             ],[
             InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/ABHISHEKSVLOG'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/cinemaenglish123')
+            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/MovieHubOfficialGroup')
             ],[
             InlineKeyboardButton('𝚄𝚙𝚍𝚊𝚝𝚎𝚜 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/Justaupdatechannel'),
             ],[
@@ -249,11 +249,11 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
         [
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/Cinemaenglish123'),
-            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/Abhisheksvlog')
+            InlineKeyboardButton('𝑮𝒓𝒐𝒖𝒑', url='https://t.me/MovieHubOfficialGroup'),
+            InlineKeyboardButton('𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓', url='https://t.me/Abhisheksvlog')
         ],
         [
-            InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url=f'https://t.me/justaupdatechannel')
+            InlineKeyboardButton('𝑪𝒉𝒂𝒏𝒏𝒆𝒍', url=f'https://t.me/justaupdatechannel')
         ]
         ]
     await client.send_cached_media(
