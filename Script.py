@@ -30,6 +30,27 @@ Hey How's the features Did you Like it <a href='tg://user?id=1951205538'><b>𝑹
 
 🔖 𝑸𝒖𝒐𝒕𝒆 : ആരും പേടിക്കേണ്ട എല്ലാവർക്കും കിട്ടും ™️"""
 
+    WARN_TXT = """Here is the help for the <b>Warns</b> module:
+
+Keep your members in check with warnings; stop them getting out of control!
+If you're looking for automated warnings, read about the blacklist module!
+
+<b>Admin Commands</b>:
+- /warn <reason>: Warn a user.
+- /dwarn <reason>: Warn a user by reply, and delete their message.
+- /swarn <reason>: Silently warn a user, and delete your message.
+- /warns: See a user's warnings.
+- /rmwarn: Remove a user's latest warning.
+- /resetwarn: Reset all of a user's warnings to 0.
+- /resetallwarns: Delete all the warnings in a chat. All users return to 0 warns.
+- /warnings: Get the chat's warning settings.
+- /setwarnmode <ban/kick/mute>: Set the chat's warn mode.
+- /setwarnlimit <number>: Set the number of warnings before users are punished.
+
+<b>Examples</b>
+- Warn a user.
+-> /warn @user For disobeying the rules"""
+
     URL_TXT = """Help: <b>URL Shortner</b>
 Some URLs is Shortner
 <b>Commands and Usage:</b>
