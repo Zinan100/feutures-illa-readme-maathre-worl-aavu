@@ -807,7 +807,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
             InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
             ],[
-            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker')
+            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker'),
             InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
             InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
             InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort'),
