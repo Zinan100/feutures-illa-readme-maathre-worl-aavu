@@ -792,7 +792,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙿𝚒𝚗', callback_data='pin'), 
             InlineKeyboardButton('𝙿𝚊𝚜𝚝𝚎', callback_data='pastes'),
             ],[
-            InlineKeyboardButton("𝙸𝚖𝚊𝚐𝚎", callback_data='image')
+            InlineKeyboardButton("𝙸𝚖𝚊𝚐𝚎", callback_data='image'),
             InlineKeyboardButton('𝙵𝚞𝚗', callback_data='fun'), 
             InlineKeyboardButton('𝙹𝚜𝚘𝚗', callback_data='son'),
             InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),
