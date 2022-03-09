@@ -189,7 +189,7 @@ async def index_files_to_db(lst_msg_id, chat, msg, bot):
                     can = [[InlineKeyboardButton('Cancel', callback_data='index_cancel')]]
                     reply = InlineKeyboardMarkup(can)
                     await msg.edit_text(
-                        text=f"Total messages fetched: <code>{current}</code>\nTotal messages saved: <code>{total_files}</code>\nDuplicate Files Skipped: <code>{duplicate}</code>\nDeleted Messages Skipped: <code>{deleted}</code>\nNon-Media messages skipped: <code>{no_media}</code>\nErrors Occured: <code>{errors}</code>",
+                        text=f"Tᴏᴛᴀʟ Mᴇssᴀɢᴇs Fᴇᴛᴄʜᴇᴅ: <code>{current}</code>\nTᴏᴛᴀʟ Mᴇssᴀɢᴇs Fᴇᴛᴄʜᴇᴅ: <code>{total_files}</code>\nDᴜᴘʟɪᴄᴀᴛᴇ Fɪʟᴇs Sᴋɪᴘᴘᴇᴅ: <code>{duplicate}</code>\nDᴇʟᴇᴛᴇᴅ Mᴇssᴀɢᴇ Sᴋɪᴘᴘᴇᴅ: <code>{deleted}</code>\nNᴏɴ-Mᴇᴅɪᴀ Mᴇssᴀɢᴇs Sᴋɪᴘᴘᴇᴅ: <code>{no_media}</code>\nEʀʀᴏʀs Oᴄᴄᴜʀᴇᴅ: <code>{errors}</code>",
                         reply_markup=reply)
         except Exception as e:
             logger.exception(e)
