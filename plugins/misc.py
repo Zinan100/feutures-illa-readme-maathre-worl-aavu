@@ -133,33 +133,59 @@ async def who_is(client, message):
 @Client.on_message(filters.command("help"))
 async def help(client, message):
         buttons = [[
-            InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
-            InlineKeyboardButton('𝖨𝗆𝖽𝖻', callback_data='imbd'),
-            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purge')
+            InlineKeyboardButton('𝙼𝚊𝚗𝚞𝚎𝚕 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='manuelfilter'),
+            InlineKeyboardButton('𝙰𝚞𝚝𝚘 𝙵𝚒𝚕𝚝𝚎𝚛', callback_data='autofilter'),
+            InlineKeyboardButton('𝙲𝚘𝚗𝚗𝚜𝚌𝚝𝚒𝚘𝚗𝚜', callback_data='coct'),
             ],[
-            InlineKeyboardButton('𝖳𝗀𝗋𝖺𝗉𝗁', callback_data='tgraph'),
-            InlineKeyboardButton('𝖬𝖾𝗆𝖾', callback_data='fun'),
-            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='mute')
+            InlineKeyboardButton('𝚂𝚘𝚗𝚐', callback_data='songs'),
+            InlineKeyboardButton('𝙴𝚡𝚝𝚛𝚊', callback_data='extra'),
+            InlineKeyboardButton("𝚅𝚒𝚍𝚎𝚘", callback_data='video'),
             ],[
-            InlineKeyboardButton('𝖡𝖺𝗇', callback_data='ban'),
-            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
-            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin')
+            InlineKeyboardButton('𝙿𝚒𝚗', callback_data='pin'), 
+            InlineKeyboardButton('𝙿𝚊𝚜𝚝𝚎', callback_data='pastes'),
+            InlineKeyboardButton("𝙸𝚖𝚊𝚐𝚎", callback_data='image'),
             ],[
-            InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
-            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
-            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='ping')
+            InlineKeyboardButton('𝙵𝚞𝚗', callback_data='fun'), 
+            InlineKeyboardButton('𝙹𝚜𝚘𝚗', callback_data='son'),
+            InlineKeyboardButton('𝚃𝚃𝚂', callback_data='ttss'),
             ],[
-            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
-            InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song'),
-            InlineKeyboardButton('𝖳𝖳𝖲', callback_data='tts'),
-            ],[          
-            InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='paste'),
-            InlineKeyboardButton('𝖦-𝖳𝗋𝖺𝗇𝗌', callback_data='gtrans'),
-            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick')
+            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purges'),
+            InlineKeyboardButton('𝙿𝚒𝚗𝚐', callback_data='pings'),
+            InlineKeyboardButton('𝚃𝚎𝚕𝚎𝚐𝚛𝚊𝚙𝚑', callback_data='tele'),
             ],[
-            InlineKeyboardButton('𝖢𝗅𝗈𝗌𝖾', callback_data='close_data'),          
-            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗌', callback_data='stats'),
-            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help')
+            InlineKeyboardButton('𝚆𝚑𝚘𝚒𝚜', callback_data='whois'),
+            InlineKeyboardButton('𝙼𝚞𝚝𝚎', callback_data='restric'),
+            InlineKeyboardButton('𝙺𝚒𝚌𝚔', callback_data='zombies'),
+            ],[
+            InlineKeyboardButton('𝚁𝚎𝚙𝚘𝚛𝚝', callback_data='report'),
+            InlineKeyboardButton('𝚈𝚝-𝚃𝚑𝚞𝚖𝚋', callback_data='ytthumb'),
+            InlineKeyboardButton('𝚂𝚝𝚒𝚌𝚔𝚎𝚛-𝙸𝚍', callback_data='sticker'),
+            ],[
+            InlineKeyboardButton('𝙲𝚘𝚟𝚒𝚍', callback_data='corona'),
+            InlineKeyboardButton('𝙰𝚞𝚍𝚒𝚘-𝙱𝚘𝚘𝚔', callback_data='abook'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝', callback_data='urlshort'),
+            ],[
+            InlineKeyboardButton('𝙶-𝚃𝚛𝚊𝚗𝚜', callback_data='gtrans'),
+            InlineKeyboardButton('𝙵𝚒𝚕𝚎-𝚂𝚝𝚘𝚛𝚎', callback_data='newdata'),
+            InlineKeyboardButton('𝚂𝚑𝚊𝚛𝚎-𝚃𝚎𝚡𝚝', callback_data='sharetext'),
+            ],[
+            InlineKeyboardButton('𝙿𝚊𝚜𝚜𝚠𝚘𝚛𝚍-𝙶𝚎𝚗', callback_data='genpassword'),
+            InlineKeyboardButton('𝙰𝚙𝚙𝚛𝚘𝚟𝚎', callback_data='approve'),
+            InlineKeyboardButton('𝙶𝚛𝚎𝚎𝚝𝚒𝚗𝚐𝚜', callback_data='welcome'),
+            ],[
+            InlineKeyboardButton('𝙻𝚘𝚌𝚔𝚜', callback_data='lock'),
+            InlineKeyboardButton('𝙽𝚘𝚝𝚎𝚜', callback_data='note'),
+            InlineKeyboardButton('𝙿𝚞𝚛𝚐𝚎', callback_data='purge'),
+            ],[
+            InlineKeyboardButton('𝚁𝚞𝚕𝚎𝚜', callback_data='rule'),
+            InlineKeyboardButton('𝚄𝚛𝚕-𝚂𝚑𝚘𝚛𝚝𝚗𝚎𝚛', callback_data='url'),
+            InlineKeyboardButton('𝚃𝚘𝚛𝚛𝚎𝚗𝚝', callback_data='torrent'),
+            ],[
+            InlineKeyboardButton('𝚆𝚊𝚛𝚗', callback_data='warn'),
+            ],[
+            InlineKeyboardButton('𝙱𝚊𝚌𝚔', callback_data='start'),
+            InlineKeyboardButton('𝚂𝚃𝙰𝚃𝚄𝚂', callback_data='stats'),
+            InlineKeyboardButton('Close X', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
