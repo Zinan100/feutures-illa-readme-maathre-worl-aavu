@@ -1,9 +1,12 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
+from Script import script
+from info import PICS
 from info import IMDB_TEMPLATE
 from utils import extract_user, get_file_id, get_poster, last_online
 import time
+import random
 from datetime import datetime
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 import logging
@@ -126,6 +129,45 @@ async def who_is(client, message):
             disable_notification=True
         )
     await status_message.delete()
+
+@Client.on_message(filters.command("help"))
+async def help(client, message):
+        buttons = [[
+            InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
+            InlineKeyboardButton('𝖨𝗆𝖽𝖻', callback_data='imbd'),
+            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purge')
+            ],[
+            InlineKeyboardButton('𝖳𝗀𝗋𝖺𝗉𝗁', callback_data='tgraph'),
+            InlineKeyboardButton('𝖬𝖾𝗆𝖾', callback_data='fun'),
+            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='mute')
+            ],[
+            InlineKeyboardButton('𝖡𝖺𝗇', callback_data='ban'),
+            InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct'),
+            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin')
+            ],[
+            InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
+            InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
+            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='ping')
+            ],[
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
+            InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song'),
+            InlineKeyboardButton('𝖳𝖳𝖲', callback_data='tts'),
+            ],[          
+            InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='paste'),
+            InlineKeyboardButton('𝖦-𝖳𝗋𝖺𝗇𝗌', callback_data='gtrans'),
+            InlineKeyboardButton('𝖲𝗍𝗂𝖼𝗄𝖾𝗋 𝖨𝖣', callback_data='stick')
+            ],[
+            InlineKeyboardButton('𝖢𝗅𝗈𝗌𝖾', callback_data='close_data'),          
+            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗌', callback_data='stats'),
+            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_photo(
+            photo=random.choice(PICS),
+            caption=script.HELP_TXT.format(message.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
 
 @Client.on_message(filters.command(["imdb", 'search']))
 async def imdb_search(client, message):
