@@ -26,7 +26,7 @@ IKKA_STRINGS = (
 
 
 @Client.on_message(
-    filters.command("guhan", COMMAND_HAND_LER) &
+    filters.command("ikka", COMMAND_HAND_LER) &
     f_onw_fliter
 )
 async def ikka(_, message):
