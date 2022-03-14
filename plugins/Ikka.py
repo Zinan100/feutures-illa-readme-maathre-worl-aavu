@@ -4,7 +4,7 @@
 import random
 from pyrogram import Client, filters
 from info import COMMAND_HAND_LER
-from plugins.neededshits.cust_p_filters import f_onw_fliter
+from plugins.helper_fuctions.cust_p_filters import f_onw_fliter
 
 
 IKKA_STRINGS = (
