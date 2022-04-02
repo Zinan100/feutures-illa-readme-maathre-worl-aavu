@@ -43,26 +43,17 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/Zinan00100'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/moviespot001100')
-            ],[
-            InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/moviespot00100'),
-            ],[
-            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
-        ]]
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAEBB2liJjsNVSkfAy_OtYR0Q48dN_9DsAACGgIAAv68YVTI6jnmvnlZlh4E") 
-        await asyncio.sleep(1)
-        await m.delete()
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAEBB35iJjxD1GtQSZLiEpZ6jy6De4ilEQACxQQAAlwPSFVIEFIJTgeDTB4E") 
+            InlineKeyboardButton('💠 GᖇOᑌᑭ 💠', url='https://t.me/moviespot001100'),
+            InlineKeyboardButton('💠 UᎮDΛTΞS 💠', url='https://t.me/moviespot00100')
+            ],[      
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+        ]]         
+        reply_markup = InlineKeyboardMarkup(buttons)        
+        await message.reply_chat_action("Typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAIscGI_NIFP4RCJvnzCmKNYrL0P76aPAAIEAAPBJDExieUdbguzyBAeBA") 
         await asyncio.sleep(1)
         await m.delete()
         await message.reply_photo(
@@ -97,21 +88,19 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙲𝚑𝚊𝚝', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝙷𝚎𝚕𝚙', callback_data='help'),
-            InlineKeyboardButton('𝙰𝚋𝚘𝚞𝚝', callback_data='about')
-            ],[
-            InlineKeyboardButton('🔍𝚂𝚎𝚊𝚛𝚌𝚑 𝙷𝚎𝚛𝚎 𝙼𝚘𝚟𝚒𝚎🔎', switch_inline_query_current_chat='')
-            ],[
-            InlineKeyboardButton('𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛', url='https://t.me/Zinan00100'),
-            InlineKeyboardButton('𝙶𝚛𝚘𝚞𝚙', url='https://t.me/moviespot001100')
-            ],[
-            InlineKeyboardButton('𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/moviespot00100'),
-            ],[
-            InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
-        ]]
+            InlineKeyboardButton('💠 ႺᖇOUᑭ 💠', url='https://t.me/moviespot001100'),
+            InlineKeyboardButton('💠 UᑭDΛTΞS 💠', url='https://t.me/moviespot00100')
+            ],[      
+            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
+            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+        ]]         
         reply_markup = InlineKeyboardMarkup(buttons)
+        await message.reply_chat_action("Typing")
+        m=await message.reply_sticker("CAACAgUAAxkBAAIscGI_NIFP4RCJvnzCmKNYrL0P76aPAAIEAAPBJDExieUdbguzyBAeBA") 
+        await asyncio.sleep(2)
+        await m.delete()
         await message.reply_photo(
             photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
