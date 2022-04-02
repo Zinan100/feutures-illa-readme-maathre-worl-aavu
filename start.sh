@@ -8,5 +8,5 @@ else
 fi
 cd /feutures-illa-readme-maathre-worl-aavu
 pip3 install -U -r requirements.txt
-echo "Starting TIGER Shroff....🔥"
+echo "my repo is cloned by a copycat...🔥"
 python3 bot.py
