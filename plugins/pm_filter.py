@@ -787,7 +787,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
         ]]         
         await query.message.edit_text(
-            text="✯✯✯
+            text="✯✯✯"
         await query.message.edit_text(
             text="✮✯✯"
         )
