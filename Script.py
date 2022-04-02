@@ -5,7 +5,7 @@ class script(object):
 
 i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗌 𝖺𝖽𝗆𝗂𝗇, 𝗁𝗂𝗍 /help 𝖿𝗈𝗋 𝗆𝗈𝗋𝖾
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-©MᴀɪɴᴛᴀɪɴᴇD Bʏ:<a href='tg://user?id=1951205538'><b>༒ᶜʳᵃᶻʸᴮᴼˢˢ卂乃卄丨丂卄乇Ҝ༒</b></a> .</b>"""
+©MᴀɪɴᴛᴀɪɴᴇD Bʏ:<a href='tg://user?id=5048110787'><b>𝙕𝙄𝙉𝘼𝙉 𝙏𝙀𝘾𝙃 2.𝙊 ͭ ᷚ [OꜰꜰʟɪɴE]🇦🇺/🇮🇳</b></a> .</b>"""
 
     HELP_TXT = """<b>𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌</b>: 
 /start - 𝖼𝗁𝖾𝖼𝗄 𝗐𝗁𝖾𝗍𝗁𝖾𝗋 𝗂𝗆 𝗈𝗇𝗅𝗂𝗇𝖾 
@@ -14,9 +14,9 @@ i𝗍𝗌 𝖾𝖺𝗌𝗒 𝗍𝗈 𝗎𝗌𝖾 𝗆𝖾; 𝗃𝗎𝗌𝗍 𝖺
     ABOUT_TXT = """
 ╔══════════════════❍
 ║╭━━━━━━━━━━━━━━━➣ 
-║➠ 𝙼𝚈 𝙽𝙰𝙼𝙴 -  Tiger Shroff
-║➠ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 - :<a href='tg://user?id=1951205538'><b>༒ᶜʳᵃᶻʸᴮᴼˢˢ卂乃卄丨丂卄乇Ҝ༒</b></a>
-║➠ 𝙲𝚁𝙴𝙳𝙸𝚃𝚂 - <a href='https://t.me/Abhisheksvlog'>Everyone in this journey </a>
+║➠ 𝙼𝚈 𝙽𝙰𝙼𝙴 - <b>ᗩᒪΞ᙭</b>
+║➠ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁 - :<a href='tg://user?id=5048110787'><b>𝙕𝙄𝙉𝘼𝙉 𝙏𝙀𝘾𝙃 2.𝙊 ͭ ᷚ [OꜰꜰʟɪɴE]🇦🇺/🇮🇳</b></a>
+║➠ 𝙲𝚁𝙴𝙳𝙸𝚃𝚂 - <a href='https://t.me/zinan00100'>Everyone in this journey </a>
 ║➠ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 - <a href='https://docs.pyrogram.org/'>𝑷𝒚𝒕𝒉𝒐𝒏 3 </a>
 ║➠ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈 - <a href='https://docs.pyrogram.org/'>𝑷ʏʀᴏɢʀᴀᴍ </a>
 ║➠ 𝙲𝙻𝙾𝙽𝙴𝙳 𝙵𝚁𝙾𝙼 - EvaMaria
