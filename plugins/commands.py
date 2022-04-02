@@ -57,11 +57,11 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('✗ 𝙲𝚕𝚘𝚜𝚎 𝚃𝚑𝚎 𝙼𝚎𝚗𝚞 ✗', callback_data='close_data')
         ]]
-        await message.reply_chat_action("🔥")
+        await message.reply_chat_action("typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAEBB2liJjsNVSkfAy_OtYR0Q48dN_9DsAACGgIAAv68YVTI6jnmvnlZlh4E") 
         await asyncio.sleep(1)
         await m.delete()
-        await message.reply_chat_action("🔥")
+        await message.reply_chat_action("typing")
         m=await message.reply_sticker("CAACAgUAAxkBAAEBB35iJjxD1GtQSZLiEpZ6jy6De4ilEQACxQQAAlwPSFVIEFIJTgeDTB4E") 
         await asyncio.sleep(1)
         await m.delete()
